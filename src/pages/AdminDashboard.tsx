@@ -39,6 +39,42 @@ const AdminDashboard = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [activeItem, setActiveItem] = useState("overview");
 
+  // Define the stats array that was missing
+  const stats = [
+    {
+      title: "Total Assets",
+      value: "2,847",
+      change: "+12%",
+      trend: "up",
+      icon: Database,
+      color: "blue"
+    },
+    {
+      title: "Active Users",
+      value: "1,234",
+      change: "+8%",
+      trend: "up",
+      icon: Users,
+      color: "green"
+    },
+    {
+      title: "Pending Maintenance",
+      value: "23",
+      change: "-5%",
+      trend: "down",
+      icon: Settings,
+      color: "orange"
+    },
+    {
+      title: "System Health",
+      value: "98.5%",
+      change: "+2%",
+      trend: "up",
+      icon: Activity,
+      color: "emerald"
+    }
+  ];
+
   const handleSignOut = () => {
     setIsAuthenticated(false);
     setActiveItem("overview");
