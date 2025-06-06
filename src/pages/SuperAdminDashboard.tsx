@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import { AuthPage } from "@/components/AuthPage";
@@ -78,7 +77,7 @@ const SuperAdminDashboard = () => {
   };
 
   if (!isAuthenticated) {
-    return <AuthPage userType="superadmin" onAuthenticated={() => setIsAuthenticated(true)} />;
+    return <AuthPage userType="admin" onAuthenticated={() => setIsAuthenticated(true)} />;
   }
 
   const renderContent = () => {

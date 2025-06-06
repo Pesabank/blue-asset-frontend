@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -19,7 +18,8 @@ import {
   Backup,
   Key,
   Clock,
-  Server
+  Server,
+  Save
 } from "lucide-react";
 
 export const SystemSettingsPage = () => {
@@ -275,7 +275,7 @@ export const SystemSettingsPage = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <Backup className="h-5 w-5 mr-2" />
+                  <Save className="h-5 w-5 mr-2" />
                   Backup Configuration
                 </CardTitle>
               </CardHeader>
@@ -350,7 +350,7 @@ export const SystemSettingsPage = () => {
                   ))}
                 </div>
                 <Button className="w-full mt-4" variant="outline">
-                  <Backup className="h-4 w-4 mr-2" />
+                  <Save className="h-4 w-4 mr-2" />
                   Create Manual Backup
                 </Button>
               </CardContent>
